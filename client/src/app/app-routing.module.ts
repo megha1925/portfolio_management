@@ -1,67 +1,63 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AllAssetPriceComponent } from './components/all-asset-price/all-asset-price.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ErrorComponent } from './components/error/error.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
-import { ErrorComponent } from './components/error/error.component';
-import { SellassetComponent } from './components/sellasset/sellasset.component';
-import { AuthGuard } from './services/auth.guard';
-import { ViewassetComponent } from './components/viewasset/viewasset.component';
-import { AllassetpriceComponent } from './components/allassetprice/allassetprice.component';
+import { SellAssetComponent } from './components/sell-asset/sell-asset.component';
+import { ViewAssetComponent } from './components/view-asset/view-asset.component';
+import { AuthGuard } from './services/auth/auth.guard';
 
 const routes: Routes = [
   {
-    path:'',
-    component:HomeComponent,
-    pathMatch:'full'
+    path: '',
+    component: HomeComponent,
+    pathMatch: 'full',
   },
   {
-    path:"login",
-    component:LoginComponent,
-    pathMatch:"full"
+    path: 'login',
+    component: LoginComponent,
+    pathMatch: 'full',
   },
   {
-    path:"dashboard",
-    component:DashboardComponent,
-    pathMatch:"full",
-    canActivate:[AuthGuard]
+    path: 'dashboard',
+    component: DashboardComponent,
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
   },
   {
-    path:"contact",
-    component:ContactUsComponent,
-    pathMatch:"full",
-  
+    path: 'contact',
+    component: ContactUsComponent,
+    pathMatch: 'full',
   },
   {
-    path:"viewasset",
-    component:ViewassetComponent,
-    pathMatch:"full",
-    canActivate:[AuthGuard]
-  
+    path: 'viewasset',
+    component: ViewAssetComponent,
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
   },
   {
-    path:"sellasset",
-    component:SellassetComponent,
-    pathMatch:"full",
-    canActivate:[AuthGuard]
-  
+    path: 'sellasset',
+    component: SellAssetComponent,
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
   },
   {
-    path:"currentprice",
-    component:AllassetpriceComponent,
-    pathMatch:"full",
-    canActivate:[AuthGuard]
-  
+    path: 'currentprice',
+    component: AllAssetPriceComponent,
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
   },
-  { 
-    path: '**', 
-    component: ErrorComponent 
-  }
+  {
+    path: '**',
+    component: ErrorComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

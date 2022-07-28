@@ -1,0 +1,90 @@
+warning: LF will be replaced by CRLF in Authorization/.gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Authorization/.mvn/wrapper/maven-wrapper.properties.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Authorization/mvnw.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Authorization/mvnw.cmd.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Authorization/pom.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Authorization/src/main/java/com/cts/authorization/AuthorizationApplication.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Authorization/src/main/java/com/cts/authorization/config/SwaggerConfig.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Authorization/src/test/java/com/cts/authorization/AuthorizationApplicationTests.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CalculateNetworth/.gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CalculateNetworth/.mvn/wrapper/maven-wrapper.properties.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CalculateNetworth/mvnw.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CalculateNetworth/mvnw.cmd.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CalculateNetworth/pom.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CalculateNetworth/src/main/java/com/cts/calculatenetworth/CalculateNetworthApplication.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CalculateNetworth/src/main/java/com/cts/calculatenetworth/config/SwaggerConfig.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CalculateNetworth/src/main/java/com/cts/calculatenetworth/exception/UserNotFoundException.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CalculateNetworth/src/main/resources/application.properties.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CalculateNetworth/src/test/java/com/cts/calculatenetworth/CalculateNetworthApplicationTests.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailyMutualFundNAV/.gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailyMutualFundNAV/.mvn/wrapper/maven-wrapper.properties.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailyMutualFundNAV/mvnw.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailyMutualFundNAV/mvnw.cmd.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailyMutualFundNAV/pom.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailyMutualFundNAV/src/main/java/com/cts/dailymutualfundnav/DailyMutualFundNavApplication.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailyMutualFundNAV/src/main/java/com/cts/dailymutualfundnav/config/SwaggerConfig.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailyMutualFundNAV/src/main/java/com/cts/dailymutualfundnav/exception/UserNotAuthorizedException.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailyMutualFundNAV/src/main/resources/application.properties.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailyMutualFundNAV/src/test/java/com/cts/dailymutualfundnav/DailyMutualFundNavApplicationTests.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailySharePrice/.gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailySharePrice/.mvn/wrapper/maven-wrapper.properties.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailySharePrice/mvnw.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailySharePrice/mvnw.cmd.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailySharePrice/pom.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailySharePrice/src/main/java/com/cts/dailyshareprice/DailySharePriceApplication.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailySharePrice/src/main/java/com/cts/dailyshareprice/config/SwaggerConfig.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailySharePrice/src/main/java/com/cts/dailyshareprice/exception/UserNotFoundException.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailySharePrice/src/main/resources/application.properties.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DailySharePrice/src/test/java/com/cts/dailyshareprice/DailySharePriceApplicationTests.java.
+The file will have its original line endings in your working directory
+[1mdiff --git a/DailyMutualFundNAV/data.log b/DailyMutualFundNAV/data.log[m
+[1mindex 9c58754..630be43 100644[m
+[1m--- a/DailyMutualFundNAV/data.log[m
+[1m+++ b/DailyMutualFundNAV/data.log[m
+[36m@@ -1,523 +1,30 @@[m
+[31m-"2022-07-27 00:08:13 [restartedMain] INFO  c.c.d.DailyMutualFundNavApplication - Starting DailyMutualFundNavApplication using Java 17 on hightarun with PID 9108 (C:\Users\tarun\Desktop\meghaMFPE\Portfolio project\Portfolio project\DailyMutualFundNAV\target\classes started by tarun in C:\Users\tarun\Desktop\meghaMFPE\Portfolio project\Portfolio project\DailyMutualFundNAV)[m
+[31m-""2022-07-27 00:08:13 [restartedMain] INFO  c.c.d.DailyMutualFundNavApplication - No active profile set, falling back to 1 default profile: "default"[m
+[31m-""2022-07-27 00:08:13 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[m
+[31m-""2022-07-27 00:08:13 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[m
+[31m-""2022-07-27 00:08:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.[m
+[31m-""2022-07-27 00:08:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.[m
+[31m-""2022-07-27 00:08:14 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2a987502-2d5b-3a06-b27b-5843cbddd20d[m
+[31m-""2022-07-27 00:08:15 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)[m
+[31m-""2022-07-27 

@@ -1,0 +1,92 @@
+.container {
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    min-width: 40%;
+    height: 40vh;
+    border-radius: 8px;
+    justify-content: center;
+    background-color: #d1e8ee;
+    margin: 0 auto;
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      h2 {
+        font-size: 2rem;
+        font-family: "Raleway", "sans serif";
+        color: #8897aa;
+      }
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 10px;
+      .input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        width: 60%;
+        input {
+          border: 0;
+          font-size: 1.5rem;
+          width: 100%;
+          font-weight: 500;
+          padding: 10px;
+          letter-spacing: 2px;
+          border-radius: 7px;
+          background-color: #c8c7d7;
+          color: #edecf2;
+          cursor: pointer;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+            rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          &:hover {
+            background-color: #edecf2;
+            color: #c8c7d7;
+          }
+        }
+      }
+
+      .btn-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        width: 30%;
+        button {
+          border: 0;
+          font-size: 1.5rem;
+          font-weight: 500;
+          padding: 10px;
+          width: 100%;
+          letter-spacing: 2px;
+          border-radius: 7px;
+          background-color: #c8c7d7;
+          color: #edecf2;
+          cursor: pointer;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+            rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          &:hover {
+            background-color: #edecf2;
+            color: #c8c7d7;
+          }
+        }
+      }
+    }
+  }
+}

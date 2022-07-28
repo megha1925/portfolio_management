@@ -1,1 +1,9 @@
-<p>navbar works!</p>
+<div class="container">
+  <div class="part1">
+    <a class="linkDashboard" routerLink="/dashboard">PORTFOLIO MANAGEMENT</a>
+  </div>
+  <div class="part2">
+    <a class="login" *ngIf="!loggedIn" routerLink="/login">LOGIN</a>
+    <a class="login" *ngIf="loggedIn" routerLink="/login">LOGOUT</a>
+  </div>
+</div>

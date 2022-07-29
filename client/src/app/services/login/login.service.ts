@@ -1,7 +1,13 @@
+import { Observable, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AuthResponse } from '../../model/authResponse';
 import { API_URL } from '../../app.constants';
+
+interface booleanReturn {
+  res: boolean;
+}
+
 @Injectable({
   providedIn: 'root',
 })
@@ -11,7 +17,7 @@ export class LoginService {
   //calling the server to generate token
   generateToken(credentials: any) {
     //token generate
-    return this.http.post<AuthResponse>(`${API_URL}/getToken`, credentials);
+    return this.http.post<AuthResponse>(`${API_URL}/authenticate`, credentials);
   }
 
   //for login user
@@ -38,5 +44,28 @@ export class LoginService {
 
   getToken() {
     return localStorage.getItem('token');
+  }
+
+  ok: boolean = true;
+
+  async fetchData(): Promise<boolean> {
+    let token = localStorage.getItem('token');
+
+    const value = await fetch(`${API_URL}/authorize`, {
+      method: 'POST',
+      headers: { Authorization: 'Bearer ' + token },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        this.ok = data;
+        return data;
+      });
+
+    return value;
+  }
+
+  checkToken(): boolean {
+    this.fetchData();
+    return this.ok;
   }
 }

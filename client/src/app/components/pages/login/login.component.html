@@ -1,9 +1,10 @@
 <div class="container">
   <div class="wrapper">
     <div class="text"><h2>Welcome, Please fill your details to Login!</h2></div>
-    <form class="form">
+    <form class="form" (ngSubmit)="onSubmit()">
       <div class="input">
         <input
+          [(ngModel)]="credentials.username"
           name="username"
           placeholder="Enter Username"
           type="text"
@@ -12,6 +13,7 @@
       </div>
       <div class="input">
         <input
+          [(ngModel)]="credentials.password"
           name="password"
           placeholder="Enter Password"
           type="text"
@@ -19,7 +21,7 @@
         />
       </div>
       <div class="btn-div">
-        <button name="submit" class="btn-submit" value="login">
+        <button type="submit" name="submit" class="btn-submit" value="login">
           <span>Login</span>
         </button>
       </div>

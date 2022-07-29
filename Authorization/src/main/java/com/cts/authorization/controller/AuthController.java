@@ -44,7 +44,7 @@ public class AuthController {
 		return "Hello World";
 	}
 
-	@PostMapping("/getToken")
+	@PostMapping("/authenticate")
 	public ResponseEntity<JwtResponse> createAuthenticationToken(@RequestBody JwtRequest authenticationRequest)
 			throws UserNotFoundException {
 		authenticate(authenticationRequest.getUsername(), authenticationRequest.getPassword());
@@ -89,14 +89,14 @@ public class AuthController {
 		}
 	}
 
-	@GetMapping("/getuname")
+	@GetMapping("/username")
 	public String getUname(@RequestHeader("Authorization") String authorization) {
 		String token = authorization.substring(7);
 		log.info("Getting username by token...");
 		return jwtTokenUtil.getUsernameFromToken(token);
 	}
 
-	@GetMapping("/getUserId")
+	@GetMapping("/userid")
 	public int getUserId(@RequestHeader("Authorization") String authorization) {
 		String token = authorization.substring(7);
 		String uname = jwtTokenUtil.getUsernameFromToken(token);

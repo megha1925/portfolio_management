@@ -1,9 +1,20 @@
 <div class="container">
   <div class="part1">
-    <a class="linkDashboard" routerLink="/dashboard">PORTFOLIO MANAGEMENT</a>
+    <a class="linkDashboard" routerLink="/">PORTFOLIO MANAGEMENT</a>
   </div>
   <div class="part2">
     <a class="login" *ngIf="!loggedIn" routerLink="/login">LOGIN</a>
+    <div class="userLoggedIn" *ngIf="loggedIn">
+      <a class="link" *ngIf="loggedIn" routerLink="/sellasset"
+        ><span>SELL ASSETS</span></a
+      >
+      <a class="link" *ngIf="loggedIn" routerLink="/viewasset"
+        ><span>VIEW ALL ASSETS</span></a
+      >
+      <a class="link" *ngIf="loggedIn" routerLink="/currentprice"
+        ><span>CURRENT PRICE</span></a
+      >
+    </div>
     <a class="login" *ngIf="loggedIn" routerLink="/login">LOGOUT</a>
   </div>
 </div>

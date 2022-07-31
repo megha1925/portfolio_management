@@ -16,7 +16,7 @@ export class MutualfundserviceService {
       headers: { Authorization: 'Bearer ' + token },
     };
     return this.http.get<AllMutualFund[]>(
-      `${MF_URL}/DailyMutualFundNAV/allmf`,
+      `${MF_URL}/DailyMutualFundNAV/allMutualFunds`,
       options
     );
   }

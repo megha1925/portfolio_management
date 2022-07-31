@@ -11,7 +11,7 @@ public interface AuthorizationClient {
 	@PostMapping("/authorize")
 	public boolean authorizeRequest(@RequestHeader("Authorization") String authorization);
 
-	@GetMapping("/getUserId")
+	@GetMapping("/userid")
 	public int getUserId(@RequestHeader("Authorization") String authorization);
 
 }

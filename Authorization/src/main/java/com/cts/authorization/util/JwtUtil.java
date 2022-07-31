@@ -19,7 +19,7 @@ public class JwtUtil {
 	/**
 	 * The constant JWT_TOKEN_VALIDITY.
 	 */
-	public static final long JWT_TOKEN_VALIDITY = 60L * 30L; // 1800sec = 30mi
+	public static final long JWT_TOKEN_VALIDITY = 60L * 30L * 1000;
 
 	public String getUsernameFromToken(String token) {
 		return getClaimFromToken(token, Claims::getSubject);

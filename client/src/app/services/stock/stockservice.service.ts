@@ -15,10 +15,7 @@ export class StockserviceService {
     let options = {
       headers: { Authorization: 'Bearer ' + token },
     };
-    return this.http.get<AllStock[]>(
-      `${SD_URL}/DailySharePrice/allstock`,
-      options
-    );
+    return this.http.get<AllStock[]>(`${SD_URL}/daily/allstock`, options);
   }
 
   getStockDetails(stock: String) {
@@ -26,9 +23,6 @@ export class StockserviceService {
     let options = {
       headers: { Authorization: 'Bearer ' + token },
     };
-    return this.http.get<AllStock>(
-      `${SD_URL}/DailySharePrice/` + stock,
-      options
-    );
+    return this.http.get<AllStock>(`${SD_URL}/daily/` + stock, options);
   }
 }

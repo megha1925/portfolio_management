@@ -17,7 +17,7 @@ export class CalculatenetworthserviceService {
     let options = {
       headers: { Authorization: 'Bearer ' + token },
     };
-    return this.http.get(`${CN_URL}/calculateNetworth/`, options);
+    return this.http.get(`${CN_URL}/calculate`, options);
   }
 
   getAsset() {
@@ -25,10 +25,7 @@ export class CalculatenetworthserviceService {
     let options = {
       headers: { Authorization: 'Bearer ' + token },
     };
-    return this.http.get<Portfolio>(
-      `${CN_URL}/calculateNetworth/viewAsset`,
-      options
-    );
+    return this.http.get<Portfolio>(`${CN_URL}/calculate/viewAsset`, options);
   }
 
   sellAsset(stockDetail: SaleAsset[]) {
@@ -37,7 +34,7 @@ export class CalculatenetworthserviceService {
       headers: { Authorization: 'Bearer ' + token },
     };
     return this.http.post<AssetSaleResponse>(
-      `${CN_URL}/calculateNetworth/sellAssets`,
+      `${CN_URL}/calculate/sellAssets`,
       stockDetail,
       options
     );

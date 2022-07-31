@@ -16,6 +16,10 @@ import io.jsonwebtoken.SignatureAlgorithm;
 public class JwtUtil {
 
 	private String secret = "test";
+	/**
+	 * The constant JWT_TOKEN_VALIDITY.
+	 */
+	public static final long JWT_TOKEN_VALIDITY = 60L * 30L; // 1800sec = 30mi
 
 	public String getUsernameFromToken(String token) {
 		return getClaimFromToken(token, Claims::getSubject);
@@ -47,7 +51,7 @@ public class JwtUtil {
 
 	private String doGenerateToken(Map<String, Object> claims, String subject) {
 		return Jwts.builder().setClaims(claims).setSubject(subject).setIssuedAt(new Date(System.currentTimeMillis()))
-				.setExpiration(new Date(System.currentTimeMillis() + 1 * 60 * 1000))
+				.setExpiration(new Date(System.currentTimeMillis() + JWT_TOKEN_VALIDITY))
 				.signWith(SignatureAlgorithm.HS512, secret).compact();
 	}
 

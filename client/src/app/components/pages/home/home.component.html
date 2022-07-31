@@ -8,7 +8,20 @@
         </h2>
       </div>
       <div class="loginLink">
-        <button type="button" class="btnLink" routerLink="/login">
+        <button
+          type="button"
+          *ngIf="!loggedIn"
+          class="btnLink"
+          routerLink="/login"
+        >
+          <span>GET STARTED</span>
+        </button>
+        <button
+          type="button"
+          *ngIf="loggedIn"
+          class="btnLink"
+          routerLink="/dashboard"
+        >
           <span>GET STARTED</span>
         </button>
       </div>

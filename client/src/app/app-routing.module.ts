@@ -10,6 +10,7 @@ import { SellAssetComponent } from './components/pages/sell-asset/sell-asset.com
 import { ViewAssetComponent } from './components/pages/view-asset/view-asset.component';
 import { AuthGuard } from './services/auth/auth.guard';
 
+
 const routes: Routes = [
   {
     path: '',

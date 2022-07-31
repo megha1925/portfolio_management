@@ -1,1 +1,48 @@
-<p>view-asset works!</p>
+<div class="container">
+  <div class="wrapper">
+    <div class="table1">
+      <div class="heading">
+        <h2>Your Available Stock</h2>
+      </div>
+      <div class="details">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Counts</th>
+              <th scope="col">Current Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let stock of stockDetailList1">
+              <td>{{ stock.stockName }}</td>
+              <td>{{ stock.stockCount }}</td>
+              <td>{{ stock.currentPrice }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="table2">
+      <div class="heading2">
+        <h2>Your available mutual Funds</h2>
+      </div>
+      <div class="details">
+        <table>
+          <thead>
+            <th scope="col">Name</th>
+            <th scope="col">Counts</th>
+            <th scope="col">Current Price</th>
+          </thead>
+          <tbody>
+            <tr *ngFor="let mf of mutualFundl">
+              <td>{{ mf.mutualFundName }}</td>
+              <td>{{ mf.mutualFundUnits }}</td>
+              <td>{{ mf.currentPrice }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

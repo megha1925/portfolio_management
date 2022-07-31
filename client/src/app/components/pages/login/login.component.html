@@ -1,30 +1,39 @@
 <div class="container">
   <div class="wrapper">
-    <div class="text"><h2>Welcome, Please fill your details to Login!</h2></div>
-    <form class="form" (ngSubmit)="onSubmit()">
-      <div class="input">
-        <input
-          [(ngModel)]="credentials.username"
-          name="username"
-          placeholder="Enter Username"
-          type="text"
-          required
-        />
+    <div class="formHeader">
+      <div class="imageForm">
+        <img src="/assets/img/login.png" alt="login" />
       </div>
-      <div class="input">
-        <input
-          [(ngModel)]="credentials.password"
-          name="password"
-          placeholder="Enter Password"
-          type="text"
-          required
-        />
+    </div>
+    <div class="formDiv">
+      <div class="text">
+        <h2>Welcome, Please fill your details to Login!</h2>
       </div>
-      <div class="btn-div">
-        <button type="submit" name="submit" class="btn-submit" value="login">
-          <span>Login</span>
-        </button>
-      </div>
-    </form>
+      <form class="form" (ngSubmit)="onSubmit()">
+        <div class="input">
+          <input
+            [(ngModel)]="credentials.username"
+            name="username"
+            placeholder="Enter Username"
+            type="text"
+            required
+          />
+        </div>
+        <div class="input">
+          <input
+            [(ngModel)]="credentials.password"
+            name="password"
+            placeholder="Enter Password"
+            type="text"
+            required
+          />
+        </div>
+        <div class="btn-div">
+          <button type="submit" name="submit" class="btn-submit" value="login">
+            <span>Login</span>
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>

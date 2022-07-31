@@ -1,1 +1,18 @@
-<p>view-each-stock works!</p>
+<div class="container">
+  <table>
+    <tr>
+      <td><input type="checkbox" (click)="doOperation()" /></td>
+      <td>{{ stock.stockName }}</td>
+      <td>{{ stock.stockCount }}</td>
+      <td>{{ stock.currentPrice }}</td>
+      <td>
+        <input
+          type="number"
+          min="1"
+          max="{{ stock.stockCount }}"
+          [(ngModel)]="sales.soldUnits"
+        />
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,1 +1,36 @@
-<p>all-asset-price works!</p>
+<div class="container">
+  <div class="wrapper">
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let stock of allStock">
+            <td>{{ stock.stockName }}</td>
+            <td>{{ stock.stockValue }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let mf of allMutualFund">
+            <td>{{ mf.mutualFundName }}</td>
+            <td>{{ mf.mutualFundValue }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

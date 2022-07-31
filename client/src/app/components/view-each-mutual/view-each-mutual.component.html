@@ -1,1 +1,19 @@
-<p>view-each-mutual works!</p>
+<div class="container">
+  <table>
+    <tr>
+      <td><input type="checkbox" (click)="doOperation()" /></td>
+      <td>{{ mutual.mutualFundName }}</td>
+      <td>{{ mutual.mutualFundUnits }}</td>
+      <td>{{ mutual.currentPrice }}</td>
+
+      <td>
+        <input
+          type="number"
+          min="1"
+          max="{{ mutual.mutualFundUnits }}"
+          [(ngModel)]="sales.soldUnits"
+        />
+      </td>
+    </tr>
+  </table>
+</div>

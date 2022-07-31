@@ -89,15 +89,20 @@
                 flex-direction: column;
                 padding: 10px;
                 font-family: 'Raleway' , 'sans serif';
-
-                h3{
-                    font-size: 1.2rem;
-                    color: #F6C7B3;
+                button{
+                    border:none !important;
+                    background-color:#FEFFFF;
+                    cursor: pointer;
+                    h3{
+                        font-size: 1.2rem;
+                        color: #F6C7B3;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                        color: #5B96A9;
+                      }
                 }
-                p{
-                    font-size: 1.2rem;
-                    color: #5B96A9;
-                  }
+
             }
             &:hover {
                 transform: scale(1.1);

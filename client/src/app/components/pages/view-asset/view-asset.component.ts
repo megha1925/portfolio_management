@@ -37,6 +37,9 @@ export class ViewAssetComponent implements OnInit {
     if (!this.loginService.checkToken()) {
       this.loginService.logout();
       this.router.navigate(['/login']);
+      this.getNetWorth();
+      this.getAsset();
+    
     }
   }
 

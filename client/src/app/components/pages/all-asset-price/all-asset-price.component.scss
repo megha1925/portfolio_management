@@ -31,6 +31,7 @@
             letter-spacing:2px;
             color: #5B96A9;
             font-family: 'Raleway' , 'sans serif';
+            margin-bottom: 20px;
         }
         .table{
             display: flex;
@@ -39,15 +40,7 @@
             min-height:40vh;
             justify-content: flex-start;
             align-items:center;
-            .heading{
-             margin-bottom:20px;
-             h2{
-                 font-size: 1.8rem;
-                 letter-spacing:2px;
-                 color: #5B96A9;
-                 font-family: 'Raleway' , 'sans serif';
-             }
-            }
+
             table{
              width: fit-content;
              display: block;
@@ -55,11 +48,13 @@
              white-space: nowrap;
              table-layout: auto;
              border: none;
+             width: 60%;
              th {
-                 background-color: #78bfdb;
+                 background-color: #118ab2;
                  border-radius: 4px;
                  color: #ddffff;
                  font-weight: 500;
+                 width: 100%;
                  font-size: 1.8rem;
                  height: 5vh;
                  padding: 5px 10px;
@@ -69,14 +64,39 @@
                td {
                  padding: 5px 10px;
                  border: none;
-                 font-family: 'Sora' ,sans-serif;
+                 width: 100%;
+                 font-family: 'Economica' ,sans-serif;
                  letter-spacing: 2px;
-                 font-size: 1.2rem;
-                 background-color: whitesmoke;
+                 font-size: 1.5rem;
+                 background-color: #EEEEEE;
                  border-bottom: 1px solid grey;
                  color: #487676;
                }
             }
          }
+    }
+}
+
+@media (max-width:952px) {
+    .container{
+        .text{
+            margin-bottom: 20px;
+            h2{
+                font-size: 1.2rem;
+            }
+        }
+        .wrapper{
+         flex-direction: column;
+         .heading{
+            margin-top: 20px;
+                font-size: 1.2rem;
+         }
+         .table{
+            table{
+                width: 80%;
+
+            }        
+         }
+        }
     }
 }

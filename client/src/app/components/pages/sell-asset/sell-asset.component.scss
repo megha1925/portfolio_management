@@ -14,11 +14,11 @@
             flex-direction: column;
             width: 100%;
             min-height:40vh;
-            justify-content: flex-start;
+            justify-content: center;
             align-items:center;
             .heading{
              margin-bottom:20px;
-             h2{
+             h3{
                  font-size: 1.8rem;
                  letter-spacing:2px;
                  color: #5B96A9;
@@ -37,21 +37,10 @@
                  border-radius: 4px;
                  color: #ddffff;
                  font-weight: 500;
-                 font-size: 1.8rem;
-                 height: 5vh;
+                 font-size: 1.5rem;
                  padding: 5px 10px;
                  font-family: 'Raleway' ,sans-serif;
                  letter-spacing: 2px;
-               }
-               td {
-                 padding: 5px 10px;
-                 border: none;
-                 font-family: 'Sora' ,sans-serif;
-                 letter-spacing: 2px;
-                 font-size: 1.2rem;
-                 background-color: whitesmoke;
-                 border-bottom: 1px solid grey;
-                 color: #487676;
                }
             }
         }

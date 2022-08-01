@@ -112,3 +112,34 @@
     }
  }
 }
+
+@media (max-width: 952px) {
+    .container{
+        .wrapper{
+            .part1{
+                margin-bottom: 50px;
+                .heading{
+                    margin-bottom: 50px;
+                    h2{
+                        font-size:1.8rem !important;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+                .image{
+                    img{
+                        
+                    }
+                }
+            }
+            .part2{
+                flex-direction: column;
+                .service{
+                    margin-bottom:50px;
+                    height:400px;
+                }
+            }
+        }
+    }
+}

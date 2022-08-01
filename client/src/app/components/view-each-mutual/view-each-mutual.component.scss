@@ -5,14 +5,25 @@
     width: 100%;
     table{
         width: fit-content;
-        display: block;
+        display: flex;
         overflow-x: auto;
         white-space: nowrap;
         table-layout: auto;
         border: none;
         td {
-            input{
+        
                 padding: 5px 10px;
+                border: none;
+                font-family: 'Sora' ,sans-serif;
+                letter-spacing: 2px;
+                font-size: 1.2rem;
+                background-color: whitesmoke;
+                border-bottom: 1px solid grey;
+                color: #487676;
+           
+            input{
+                padding: 5px 50px;
+                margin-left: 20px;
                 border: none;
                 font-family: 'Sora' ,sans-serif;
                 letter-spacing: 2px;

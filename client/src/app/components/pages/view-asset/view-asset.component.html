@@ -15,18 +15,23 @@
         </thead>
         <tbody>
           <tr *ngFor="let stock of stockDetailList1">
-            <td>{{ stock.stockName }}</td>
-            <td>{{ stock.stockCount }}</td>
-            <td>{{ stock.currentPrice }}</td>
+            <td>
+              {{ stock.stockName }}
+            </td>
+            <td>
+              {{ stock.stockCount }}
+            </td>
+            <td>
+              {{ stock.currentPrice }}
+            </td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div class="table2">
-      <div class="heading2">
+    <div class="table1">
+      <div class="heading">
         <h2>Your available mutual Funds</h2>
       </div>
-
       <table>
         <thead>
           <th scope="col">Name</th>

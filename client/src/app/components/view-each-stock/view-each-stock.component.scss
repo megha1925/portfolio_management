@@ -1,27 +1,28 @@
 .container{
     margin: 0;
     padding: 0;
-    min-height: fit-content;
+    min-height: 20vh;
     width: 100%;
-    table{
-        width: fit-content;
+        table{
+        width: 100%;
         display: block;
-        overflow-x: auto;
         white-space: nowrap;
-        table-layout: auto;
-        justify-content:space-around;
+        table-layout: inherit;
+        justify-content:center;
         border: none;
         td {    
-            input{
-                padding: 25px 10px;
-                border: none;
-                font-family: 'Sora' ,sans-serif;
-                letter-spacing: 2px;
-                font-size: 1.2rem;
-                background-color: whitesmoke;
-                border-bottom: 1px solid grey;
-                color: #487676;
-            }
-          }
+            width: 100%;
+            background-color:yellow;
+            padding: 5px 10px;
+            border: none;
+            margin-left: 50px;
+            font-family: 'Sora' ,sans-serif;
+            letter-spacing: 2px;
+            background-color: #EEEEEE;
+            font-size: 1.5rem;
+            background-color: whitesmoke;
+            border-bottom: 1px solid #EEEEEE;
+            color: #487676;
+        }
     }
 }

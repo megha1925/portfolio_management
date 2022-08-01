@@ -1,0 +1,35 @@
+.container{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: fit-content;
+    .wrapper {
+        height:90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .image{
+            width:50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width:50%;
+            }
+        }
+        .text{
+            display: flex;
+            justify-content: center;
+            h3{
+                font-size:2rem;
+                font-family: 'Raleway' , 'sans serif';
+                color: #5B96A9;
+                font-weight: 800;
+            }
+        }
+    }
+}

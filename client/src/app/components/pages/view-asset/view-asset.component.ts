@@ -61,7 +61,6 @@ export class ViewAssetComponent implements OnInit {
   getNetWorth() {
     this.calculatedNetService.getNetWorth().subscribe(
       (data: any) => {
-        console.log(data);
         this.balance = data;
       },
       (error: any) => {
@@ -73,7 +72,6 @@ export class ViewAssetComponent implements OnInit {
   getAsset() {
     this.calculatedNetService.getAsset().subscribe(
       (data: Portfolio) => {
-        console.log(data);
         this.portfolioResponse = data;
         this.updateStockDetailList();
         this.updateMutualFundList();
@@ -98,7 +96,6 @@ export class ViewAssetComponent implements OnInit {
           .getCurrentMutualFund(this.mutualFundl[i].mutualFundName)
           .subscribe(
             (data: AllMutualFund) => {
-              console.log(data);
               if (
                 this.mutualFundl[i].mutualFundName.match(data.mutualFundName)
               ) {
@@ -123,7 +120,6 @@ export class ViewAssetComponent implements OnInit {
           .getStockDetails(this.stockDetailList1[i].stockName)
           .subscribe(
             (data: AllStock) => {
-              console.log(data);
               if (this.stockDetailList1[i].stockName.match(data.stockName)) {
                 this.stockDetailList1[i].currentPrice = data.stockValue;
               }

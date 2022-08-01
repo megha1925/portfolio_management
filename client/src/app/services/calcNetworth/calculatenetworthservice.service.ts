@@ -17,7 +17,7 @@ export class CalculatenetworthserviceService {
     let options = {
       headers: { Authorization: 'Bearer ' + token },
     };
-    return this.http.get(`${CN_URL}/calculate`, options);
+    return this.http.get(`${CN_URL}/calculate/`, options);
   }
 
   getAsset() {

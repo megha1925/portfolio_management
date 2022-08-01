@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { AssetSaleResponse } from 'src/app/model/assetSaleResponse';
 import { AllMutualFund } from 'src/app/model/availablemutualfund';
@@ -18,6 +18,55 @@ import { StockserviceService } from 'src/app/services/stock/stockservice.service
   styleUrls: ['./sell-asset.component.scss'],
 })
 export class SellAssetComponent implements OnInit {
+  // //============== sell Stocks ============================
+  // @Output() addEvent = new EventEmitter();
+  // @Output() removeEvent = new EventEmitter();
+  // @Input() stock: StockDetail = {
+  //   stId: 0,
+  //   stockName: '',
+  //   stockCount: 10,
+  //   currentPrice: 0,
+  // };
+  // salesStock: SaleAsset = { assetName: '', soldUnits: 0 };
+  // assetSelected: boolean = false;
+  // @Input() indexStock: number = 0;
+
+  // doOperationStock() {
+  //   this.assetSelected = !this.assetSelected;
+  //   if (this.assetSelected == true) {
+  //     this.salesStock.assetName = this.stock.stockName;
+  //     this.addEvent.emit(this.salesStock);
+  //   } else {
+  //     this.salesStock.soldUnits = 0;
+  //     this.removeEvent.emit(this.salesStock.assetName);
+  //   }
+  // }
+  // //========================================================
+
+  // //============= sell mutual ===============================
+  // @Input() mutual: MutualFund = {
+  //   mfId: 0,
+  //   mutualFundName: '',
+  //   mutualFundUnits: 0,
+  //   currentPrice: 0,
+  // };
+  // salesMutual: SaleAsset = { assetName: '', soldUnits: 0 };
+  // @Input() indexMutual: number = 0;
+  // assetSelectedMutual: boolean = false;
+
+  // doOperationMutual() {
+  //   this.assetSelected = !this.assetSelected;
+  //   if (this.assetSelected == true) {
+  //     this.salesMutual.assetName = this.mutual.mutualFundName;
+  //     this.addEvent.emit(this.salesMutual);
+  //   } else {
+  //     this.salesMutual.soldUnits = 0;
+  //     this.removeEvent.emit(this.salesMutual.assetName);
+  //   }
+  // }
+
+  // //============================================================
+
   sell: boolean = false;
   message: string = '';
   saleAsset: SaleAsset[] = [];

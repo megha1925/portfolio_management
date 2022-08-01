@@ -21,8 +21,9 @@ export class LoginService {
   }
 
   //for login user
-  loginUser(token: string) {
+  loginUser(token: string, user: string) {
     localStorage.setItem('token', token);
+    localStorage.setItem('user', user);
     return true;
   }
 
@@ -39,6 +40,7 @@ export class LoginService {
   //To logout
   logout() {
     localStorage.removeItem('token');
+    localStorage.removeItem('user');
     return true;
   }
 

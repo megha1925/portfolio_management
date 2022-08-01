@@ -32,11 +32,7 @@ export class LoginComponent implements OnInit {
       //token generated
       this.loginService.generateToken(this.credentials).subscribe(
         (response: AuthResponse) => {
-          console.log(response);
-          this.loginService.loginUser(response['jwttoken']);
-          console.log(this.loginService.getToken());
-          //this.router.navigate(['dashboard', (this.credentials.username])
-          // this.router.navigate(['dashboard'])
+          this.loginService.loginUser(response['jwttoken'], response['user']);
           window.location.href = '/dashboard';
         },
         (error: any) => {
